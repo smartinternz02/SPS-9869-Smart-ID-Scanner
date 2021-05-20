@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>result</title>
+   <link rel="stylesheet"  type="text/css" href="static/css/file.css">
+   
+ </head>
+ <body>
+ 
+ 
+<body>
+ <h2>Result:</h2>
+   {% if img_src %}
+     <img src="{{ img_src }}">
+   {% endif %}
+   
+    {% if msg %}
+   <h3>{{ msg }}</h3>
+   {% endif %}
+  
+   
+   {% if extracted_text %}
+   <main>
+     <p><p1> The extracted text from the image  is:</p1><br> <b> {{ extracted_text }} </b></p>
+  </main>
+   {% else %}
+    <p1> The extracted text will be displayed here</p1>
+   {% endif %}
+</body>
